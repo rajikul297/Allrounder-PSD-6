@@ -1,0 +1,406 @@
+/*=================
+		Common Css
+=======================*/
+body{
+	color: #666666;
+	list-style: none;
+	line-height: 1.5em;
+	box-sizing: border-box;
+	margin: 0;
+}
+.container{
+	max-width:96.0rem;
+	margin: 0 auto;
+	width: 96%;
+}
+html{
+	font-size: 62.5%;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*=============================
+		Header_area 
+=================================*/
+#header_area{
+	width: 100%;
+	clear: both;
+    background: #baadad;
+}
+.inner_header{
+	padding: 1rem 0;
+	
+}
+.top_header h1{
+	font-size: 1.4rem;
+	float: left;
+	margin-right: 5rem;
+}
+.top_header .search_menu{
+	font-size: 1.4rem;
+	float: right;
+	margin-right: rem;
+}
+ .search_menu form{
+	background: #e1e1e1;
+	padding: 3%;
+	 float: left;
+	border-radius: 1.5rem;
+	max-width: 21rem;
+	 width: 100%;
+}
+.search_menu form input{
+	background: #e1e1e1;
+	border: 0;
+	padding: 1%;
+	float: left;
+	width: 75%
+}
+ .search_menu form input[type="submit"]{
+	width: 20%;
+	 background: url(img/search.png);
+	 background-repeat: no-repeat;
+	 background-position: right;
+	 cursor: pointer;
+}
+
+/*=============================
+		Main_menu
+=================================*/
+#main_menu{
+	overflow: hidden;
+	width: 100%;
+	background: #222222;
+	padding: 1rem 0;
+	border-bottom: .2rem solid red;
+    z-index: 9999;
+}
+.inner_menu .logo{
+	float: left;
+	max-width: 35%;
+}
+.inner_menu .main_menu{
+	float: right;
+	max-width: 65%;
+
+}	
+.inner_menu .main_menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.inner_menu .main_menu ul li{
+	display: inline-block;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+.inner_menu .main_menu ul li::after{
+	content: "";
+	position: absolute;
+	background: #fff;
+	width: .1rem;
+	height: 3rem;
+	display: block;
+	top: 0;
+	right: -1rem;
+}
+.inner_menu .main_menu ul li:last-child::after{
+	display: none;
+}
+.inner_menu .main_menu ul li a{
+	color: #fff;
+	font-size: 1.3rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.inner_menu .main_menu ul li a:hover{
+	color: #7c9c37;
+}
+.inner_menu .main_menu ul li p{
+	color: #fff;
+	font-size: 1.2rem;
+	margin: 0;
+}	
+
+/*=============================
+		sticky MENU
+=================================*/
+.sticky{
+	position: fixed;
+	color: red;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: -9999;
+}
+.sticky #main_menu{
+	padding: 0rem 0;
+    z-index: 9999;
+} 
+/*=================Mobile_ menu================*/
+/*
+.mobile_menu span{
+	color: #fff;
+	float: right;
+	font-size: 4rem;
+	padding: 0rem 1rem 1rem 0;
+	margin-top: 0rem;
+	cursor: pointer;
+	display: none;
+}
+.overlay{
+	width: 0%;
+	height: 100%;
+	position: fixed;
+	background: red;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	overflow: hidden;
+}
+.overlay_content{
+	position: relative;
+	top: 15%;
+	text-align: center;	
+}
+.overlay_content a{
+	color: #fff;
+	font-size: 3rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 1rem;
+	line-height: 2;
+	letter-spacing: .5rem;	
+}
+.closebtn{
+	position: absolute;
+	font-size: 6rem;
+	color: #fff;
+	top: 2rem;
+	right: 2rem;
+	text-decoration: none;
+	font-weight: bold;
+}
+*/
+/*=============================
+		DROPdWON MENU
+=================================*/
+.main_menu ul ul{
+	display: none;
+	z-index: 9999;
+}
+.main_menu ul li:hover ul{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 0rem
+	margin-left: 1rem
+}
+.main_menu ul li:hover ul li{
+	display: block;
+	margin: 1rem;
+	width: 15rem;
+	padding: 1rem;
+	border-bottom: .2rem dotted red;
+	background: transparent;
+	text-align: left;
+}
+.main_menu ul li:hover ul li:last-child{
+	border-bottom: none
+}
+.fa-angles-right{
+	float: right;
+	color: #fff;
+	font-size: 2rem;
+}
+.main_menu ul li .hover_me ul{display: none;}
+.main_menu .hover_me:hover ul{
+	display: block;
+	position: absolute;
+	margin-top: -4rem;
+	margin-left: -21rem;
+}
+/*=============================
+		Hero_area 
+=================================*/
+#hero_section{
+	clear: both;
+	width: 100%;
+}
+.inner_hero{
+	border-bottom: .3rem solid #666;
+	overflow-x: hidden;
+	padding: 4rem 0;
+	
+}
+.hero_image{
+	width: 100%;
+}
+.hero_image img{
+	width: 22rem;
+	height: 14rem;
+}
+.hero_text{
+	max-width: 22rem;
+}
+.hero_text h1{
+	font-size: 1.8rem;
+	color: #7c9c37;
+}
+.hero_text p{
+	font-size: 1.3rem;
+	color: #666666;
+}
+.hero{
+	background: #f0f0f0;
+	width: 100%;
+	padding-bottom: .1rem;
+}
+
+/*=============================
+		work_area
+=================================*/
+#work_section{
+	padding: 4rem 0;
+}
+.inner_work{}
+.box1{
+	border-top: .1rem solid
+}
+.inner_work h1{
+	font-size: 1.8rem;
+	color: #666;
+	border-bottom: .1rem solid ;
+	padding-bottom: 1rem;
+}
+.inner_work h2{
+	font-size: 1.5rem;
+	color: #7c9c37;
+}
+.inner_work h3{}
+.inner_work p{ font-size: 1.4rem;}
+.inner_work a{
+	color:  #7c9c37;
+	text-decoration: none;
+	font-size: 1.4rem;
+	float: righ;
+	margin-bottom: 1rem
+}
+
+.inner_work .work_image{
+	width: 7rem;
+	height:12rem;
+	float: left;
+}
+.child_image{
+	padding-top: 1rem;
+	width: 110%;
+}
+.work_text{
+	width: 100%;
+	float: rightw;
+}
+.inner_work .work_image img{width: 6rem}
+
+
+/*=============================
+		contact_area
+=================================*/
+#contact_section{
+	background: #222222;	
+}
+.inner_contact{overflow-x: hidden;}
+.inner_contact h1{
+	font-size: 1.4rem;
+	margin-bottom: 2rem;
+}
+.child_contact{
+	width: 45%;
+	float: left;
+	padding: 1%;
+}
+.inner_contact h2{}
+.inner_contact h3{font-size: 1.3rem;}
+.inner_contact h4{font-size: 1.3rem;}
+.inner_contact h5{font-size: 1.3rem;}
+.inner_contact a{
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: #7c9c37;
+}
+.inner_contact p{
+	color: #666;
+	font-size: 1.3rem;
+	margin-top: 0;
+}
+.child_blog{width: 100%;
+	margin-bottom: 2rem;
+	overflow: hidden;
+}
+.child_blog a{
+	text-decoration: none;
+	color: #7c9c37;
+	font-size: 1.3rem;
+}
+
+.inner_contact ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;font-size: 1.3rem;
+	font-size: 1.3rem;
+}
+.inner_contact ul li{
+	text-align: left;
+	padding-left: 1rem;
+	padding-bottom: .5rem;
+	border-bottom: .1rem solid #666;
+	background: url(img/next.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	display: block;
+}
+.inner_contact ul li a{
+	text-decoration: none;
+	color: #7c9c37;
+	font-size: 1.3rem;
+}
+.inner_contact .contact_image img{
+	width: 40vh;
+    height: 10vh;
+}
+.inner_contact form{
+	width: 100%;
+	padding: 1%;
+}
+.inner_contact form input{
+	width: 100%;
+	padding: 4%;
+	border: 0;
+	margin: .5rem 0;
+	background: #353535;
+	border-radius: .5rem;
+}
+.inner_contact form input[type="submit"]{
+	width: 7rem;
+	color: #fff;
+	background: #7c9c37;
+	font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
